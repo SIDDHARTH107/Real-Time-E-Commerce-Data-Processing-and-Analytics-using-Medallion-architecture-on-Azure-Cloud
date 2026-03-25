@@ -1,35 +1,4 @@
-# Real Time ECommerce Data Processing & Analytics using Medallion Architecture on Azure Cloud
-
-## Project Structure
-ECommerce-Data-Processing-and-Analytics-using-Medallion-architecture-on-Azure-Cloud/
-│
-├── README.md                          # Project documentation
-├── 1719345910378.gif                  # Medallion architecture animation
-│
-├── data/                              # Source data files
-│   ├── customers.csv
-│   ├── products.csv
-│   ├── orders.csv
-│   └── ...
-│
-├── adf-pipelines/                     # Azure Data Factory pipeline configs
-│   ├── pipeline_ingest_http.json      # HTTP source ingestion pipeline
-│   └── pipeline_ingest_sql.json       # SQL source ingestion pipeline
-│
-├── databricks-notebooks/              # Azure Databricks notebooks
-│   ├── 01_bronze_ingestion.py         # Bronze layer — raw data landing
-│   ├── 02_silver_transformation.py    # Silver layer — cleaning & curation
-│   ├── 03_gold_aggregation.py         # Gold layer — business-ready datasets
-│   └── 04_mongodb_enrichment.py       # MongoDB enrichment merge
-│
-├── synapse/                           # Azure Synapse SQL scripts
-│   └── gold_layer_views.sql           # Serverless SQL views on Gold data
-│
-├── powerbi/                           # Power BI report files
-│   └── ecommerce_dashboard.pbix       # Interactive dashboard
-│
-└── screenshots/                       # Architecture & dashboard screenshots
-    └── ...
+# Real Time E-commerce Data Processing & Analytics using Medallion Architecture on Azure Cloud
 
 ## Project overview
 This project follows a modern **Medallion Architecture (Bronze → Silver → Gold)** built on Azure cloud to enable scalable, real-time e-commerce data processing and analytics.
